@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #77846c;
+}
+
+footer {
+  font-size: 14px;
+  padding: 24px;
+  color: var(--primary-color);
+  text-align: center;
+}
+a {
+  color: rgba(232, 99, 10, 0.8);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+a:hover {
+  color: #e8630a;
+}
