@@ -7,16 +7,23 @@ import "./Meanings.css";
 export default function Meanings(props) {
   return (
     <div className="Meanings">
-      <h3>{props.meanings.partOfSpeech}</h3>
       {props.meanings.definitions.map(function (definition, index) {
-        return (
-          <div key={index}>
-            <div className="definition">{definition.definition}</div>
-            <div className="example">{definition.example}</div>
-            <Synonyms synonyms={definition.synonyms} />
-          </div>
-        );
+        if (index < 2) {
+          return (
+            <section>
+              <div key={index}>
+                <h3>{props.meanings.partOfSpeech}</h3>
+                <div className="definition">{definition.definition}</div>
+                <div className="example">{definition.example}</div>
+              </div>
+            </section>
+          );
+        } else {
+          return null;
+        }
       })}
+
+      <Synonyms synonyms={props.meanings.synonyms} />
     </div>
   );
 }
