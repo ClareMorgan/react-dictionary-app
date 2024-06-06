@@ -10,8 +10,18 @@ export default function PhotoGallery(props) {
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-4">
-                <a href={photo.url} target="_blank" rel="noreferrer">
-                  <img src={photo.src.tiny} key={index} className="img-fluid" />
+                <a
+                  href={photo.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Original photo source"
+                >
+                  <img
+                    src={photo.src.tiny}
+                    key={index}
+                    alt={photo.alt}
+                    className="img-fluid"
+                  />
                 </a>
               </div>
             );
