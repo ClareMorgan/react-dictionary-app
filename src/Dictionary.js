@@ -56,7 +56,7 @@ export default function Dictionary(props) {
               defaultValue={props.defaultKeyword}
             />
           </form>
-          <div className="hint">Example: magic, mystery, music...</div>
+          <div className="hint">Suggestions: magic, mystery, music...</div>
         </section>
         <Results results={results} />
         <PhotoGallery photos={photos} />
