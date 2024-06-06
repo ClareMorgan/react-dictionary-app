@@ -1,12 +1,9 @@
-:root {
-  --primary-color: #77846c;
-}
-
 footer {
   font-size: 14px;
-  padding: 24px;
-  color: var(--primary-color);
+  padding: 30px;
+  color: #3e386d;
   text-align: center;
+  margin: 30px 0;
 }
 a {
   color: rgba(232, 99, 10, 0.8);
