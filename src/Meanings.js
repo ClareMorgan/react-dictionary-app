@@ -22,7 +22,6 @@ export default function Meanings(props) {
           return null;
         }
       })}
-
       <Synonyms synonyms={props.meanings.synonyms} />
     </div>
   );
