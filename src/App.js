@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Dictionary defaultKeyword="magic" />
+        <Dictionary defaultKeyword="music" />
         <Footer />
       </div>
     </div>

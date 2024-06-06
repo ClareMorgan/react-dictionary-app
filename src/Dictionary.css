@@ -11,9 +11,10 @@
   margin: 10px 0;
 }
 .Dictionary h1 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 .Dictionary input {
   width: 100%;
